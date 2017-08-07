@@ -1,0 +1,654 @@
+/*  banner开始  */
+#banner{
+    width: 100%;
+    position:relative;
+}
+#banner img{
+    width: 100%;
+    display: block;
+}
+#banner img:nth-child(2){
+    display: none;
+}
+@media(max-width: 991px){
+    #banner img:nth-child(1){
+        display:none;
+    }
+    #banner img:nth-child(2){
+        display:block;
+    }
+}
+#lear-more{
+    color: #ffffff;
+    font-size: 18px;
+    position:absolute;
+    right:25px;
+    bottom:34px;
+    display:block;
+    width: 100px;
+    height: 22px;
+}
+#adv{
+    display:block;
+    width:30px;
+    height:18px;
+    background:#47474a;
+    color:#c8c8c9;
+    font-size:12px;
+    font-weight:bold;
+    position:absolute;
+    right:34px;
+    top:20px;
+    text-align:center;
+}
+@media(max-width:991px){
+    #adv{
+        right:15px;
+    }
+    #lear-more{
+        font-size: 12px;
+        font-weight: bold;
+        right: 0;
+        bottom: 5px;
+    }
+}
+/*  banner结束  */
+
+/*  club开始  */
+#club{
+    height: 220px;
+    width: 100%;
+    background: #0f0f0f;
+}
+#club-bor{
+    width: 780px;
+    height: 220px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+#shar-card{
+    width: 260px;
+    padding-top: 71px;
+    padding-left: 90px;
+    background: url(../img/index/rewards_bg.png) no-repeat;
+    background-size: contain;
+    float: left;
+}
+#shar-card span{
+    display: block;
+    color: #ffffff;
+    font-size: 18px;
+}
+#shar-card img{
+    width: 160px;
+}
+#star-shar-club{
+    margin-top: 50px;
+    float: left;
+    width: 430px;
+}
+#shar-club{
+    color: #ffffff;
+    width: 430px;
+}
+#shar-club span{
+    font-size: 24px;
+    font-weight: bold;
+    display: block;
+}
+#shar-club p{
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+#lo-re-but{
+    width: 430px;
+    height: 64px;
+}
+#lo-re-but .lo-re{
+    width: 114px;
+    height: 50px;
+}
+#lo-re-but .btn{
+    background: #000000;
+    color: #a98e67;
+    border: solid #a98e67 2px;
+    display: block;
+    padding: 14px 40px;
+    margin: 7px 14px 7px 0;
+    font-size: 15px;
+    float: left;
+}
+#lo-re-but .btn:hover{
+    background: #a98e67;
+    color: #ffffff;
+}
+#lo-re-but .more{
+    margin-top: 24px;
+    margin-left: 30px;
+    float: left;
+}
+.more{
+    color: #b89f7a;
+    font-size: 14px;
+    font-weight: bold;
+}
+.more:hover{
+    color: #a98e67;
+}
+@media(max-width: 767px){
+    #club{
+        width: 100%;
+        height: 490px;
+    }
+    #club-bor{
+        padding: 0 15px;
+        width: 88%;
+        height: 490px;
+        text-align: center;
+    }
+    #shar-card{
+        float: none;
+        width: 60%;
+        margin: 0 auto;
+        padding: 55px;
+        height: 70px;
+    }
+    #star-shar-club{
+        float: none;
+        height: 310px;
+        width: 100%;
+        margin: 0;
+    }
+    #shar-club{
+        width: 100%;
+    }
+    #lo-re-but{
+        width: 100%;
+        height: 199px;
+        padding: 0 10px;
+        text-align: center;
+    }
+    #lo-re-but .lo-re{
+        float: none;
+    }
+    #lo-re-but .btn{
+        width: 80%;
+        padding: 14px 10%;
+        margin: 7px 10%;
+    }
+    #lo-re-but .more{
+        float: right;
+        margin: 0;
+        padding: 0;
+        font-size: 12px;
+        font-weight: bold;
+        margin-top: 42px;
+        margin-right: 5px;
+    }
+}
+/*  club结束  */
+
+/*  app开始  */
+#app{
+    height: 220px;
+    overflow: hidden;
+    background: url(../img/home/app_bg.gif);
+}
+#container{
+    width: 1140px;
+    padding: 0 15px;
+    height: 220px;
+    margin: 0 auto;
+}
+#phone{
+    float: left;
+    text-align: center;
+}
+#phone img{
+    height: 200px;
+    margin-top: 20px;
+    display: block;
+}
+#download{
+    width: 242px;
+    height: 209px;
+    margin: 5px 30px 0 60px;
+    float: left;
+    position: relative;
+}
+#download img{
+    width: 130px;
+    height: 130px;
+    display: block;
+}
+#scan-down{
+    height: 75px;
+    margin-top: 4px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+#scan-down a{
+    font-family: icon;
+    display: inline-block;
+    color: #999999;
+    height: 30px;
+    margin-right: 8px;
+    line-height: 30px;
+    position: absolute;
+    top: 22px;
+    right: 68px;
+}
+#scan-down span{
+    display: inline-block;
+    width: 58px;
+    height: 26px;
+    padding: 3px 5px;
+    border-left: 1px solid #000000;
+    font-size: 13px;
+    margin-top: 21px;
+}
+#load-des{
+    width: 450px;
+    float: left;
+    margin-top: 73px;
+}
+#load-des p{
+    height: 56px;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+@media(max-width:767px){
+    #app{
+        width: 100%;
+        height: 258px;
+    }
+    #container{
+        width: 90%;
+        height: 258px;
+        padding: 0 35px;
+        position: relative;
+        margin: 0;
+    }
+    #phone{
+        width: 52%;
+        float: none;
+        position: absolute;
+        bottom: 0;
+    }
+    #phone img{
+        height: 180px;
+    }
+    #download{
+        display: none;
+    }
+    #load-des{
+        width: 100%;
+        margin-top: 0;
+    }
+    #load-des p{
+        margin: 25px;
+        font-size: 18px;
+        width: 98%;
+        font-weight: normal;
+        margin: 25px;
+        text-align: center;
+    }
+    #load-des a{
+        position: absolute;
+        right: 35px;
+        bottom: 22px;
+    }
+}
+/*  app结束  */
+
+/*  sale开始  */
+#mooncake{
+    width: 100%;
+}
+#moonbanner1{
+    width: 100%;
+    display: block;
+}
+#moonbanner2{
+    display: none;
+}
+/*弹性盒模型，有问题*/
+/*#coffee{*/
+    /*display: flex;*/
+/*}*/
+/*#tianmao{*/
+    /*flex-grow: 1;*/
+/*}*/
+/*#tianmao img{*/
+    /*width: 100%;*/
+/*}*/
+/*#cold-brew{*/
+    /*flex-grow: 1;*/
+/*}*/
+/*#cold-brew img{*/
+    /*width: 100%;*/
+/*}*/
+#coffee{
+    width: 100%;
+    position: relative;
+}
+#tianmao .des,#coffee .des{
+    position: absolute;
+    bottom:30px;
+    text-align: center;
+    width: 50% ;
+}
+#coffee h2{
+    color: #ffffff;
+    font-size: 30px;
+}
+#coffee h3{
+    color: #a98e67;
+    font-size: 12px;
+    padding-top: 2px;
+}
+#coffee::after{
+    content:'';
+    display: block;
+    clear: both;
+}
+#tianmao{
+    width: 50%;
+    float: left;
+}
+#tianmao img{
+    width: 100%;
+    display: block;
+}
+#cold-brew{
+    width: 50%;
+    float: right;
+}
+#cold-brew img{
+    width: 100%;
+    display: block;
+}
+@media(max-width:768px){
+    #moonbanner1{
+        display: none;
+    }
+    #moonbanner2{
+        display: block;
+        max-width: 100%;
+    }
+    #tianmao{
+        width: 100%;
+        position: relative;
+    }
+    #cold-brew{
+        width: 100%;
+        position: relative;
+    }
+    #tianmao .des,#coffee .des{
+        width: 100%;
+    }
+}
+/*  sale结束  */
+
+/*  star-say开始  */
+#star-say{
+    height: 222px;
+    background: #106e4b;
+}
+#include{
+    width: 767px;
+    height: 162px;
+    padding: 30px 0;
+    margin: 0 auto;
+}
+#vessel{
+    display: none;
+}
+#star-say img{
+    float: left;
+}
+#say img{
+    width: 177px;
+    margin: 33px 25px 0 25px;
+}
+#qr-code img{
+    width: 106px;
+    margin: 28px 25px 0 25px;
+}
+#symbol img{
+    width: 98px;
+    margin: 28px 25px 0 25px;
+}
+#word-des img{
+    width: 184px;
+    margin: 34px 25px 0 25px;
+}
+@media(max-width: 767px){
+    #include{
+        display: none;
+    }
+    #vessel{
+        display: block;
+        height: 322px;
+        padding: 30px 0;
+    }
+    #star-say{
+        height: 382px;
+        padding: 0 35px;
+    }
+    #cut-say{
+        height: 182px;
+        width: 300px;
+        padding: 5px auto;
+        margin: 0 auto;
+    }
+    #cut-say img:nth-child(1){
+        width: 150px;
+        height: 162px;
+    }
+    #cut-say img:nth-child(2){
+        width: 150px;
+        padding-top: 53px;
+    }
+    #qr-word{
+        height: 130px;
+        width: 320px;
+        padding: 5px auto;
+        margin: 0 auto;
+    }
+    #qr-word img:nth-child(1){
+        width: 120px;
+        padding-left: 20px;
+    }
+    #qr-word img:nth-child(2){
+        width: 175px;
+        padding-left: 5px;
+    }
+}
+@media(max-width: 391px){
+    #star-say{
+        height: 569px;
+        padding: 0 35px;
+    }
+    #cut-say{
+        height: 268px;
+        padding: 5px 0;
+        width: 150px;
+    }
+    #cut-say img:nth-child(2){
+        padding-top: 0;
+        margin-top: -30px;
+    }
+    #qr-word{
+        height: 241px;
+        padding: 5px 0;
+        width: 180px;
+    }
+    #qr-word img:nth-child(1){
+        padding-left: 30px;
+    }
+}
+/*  star-say结束  */
+
+/*  apple-watch开始  */
+#apple-watch{
+    height: 220px;
+    background: url(../img/index/mobile-bg.png);
+}
+#iwatch img:nth-child(1){
+    width: 408px;
+    height: 220px;
+    float: left;
+}
+#iwatch img:nth-child(2){
+    display: none;
+}
+#introduce{
+    float: left;
+    width: 344px;
+    margin-bottom: 14px;
+}
+#introduce p{
+    width: 344px;
+    padding: 35px 68px 10px 68px;
+    font-size: 18px;
+    font-weight: bold;
+}
+#introduce a{
+    padding: 0 68px;
+    display: inline-block;
+}
+#app-down{
+    float: right;
+    width: 130px;
+    height: 172px;
+    padding-top: 35px;
+    padding-left: 20px;
+}
+#app-down span{
+    font-weight: bold;
+    margin-left: 20px;
+}
+#down-sweep{
+    height: 130px;
+    width: 130px;
+}
+#down-btn{
+    display: none;
+}
+@media(max-width: 1066px){
+    #apple-watch{
+        height: 630px;
+        width: 100%;
+    }
+    #iwatch img:nth-child(1){
+        display: none;
+        float: none;
+    }
+    #iwatch img:nth-child(2){
+        display: block;
+        width: 414px;
+        margin: 0 auto;
+    }
+    #introduce{
+        width: 100%;
+        text-align: center;
+    }
+    #introduce p{
+        width: 93%;
+        padding: 0 31px 10px 31px;
+        text-align: center;
+    }
+    #app-down{
+        float: none;
+        width: 100%;
+        padding: 0;
+    }
+    #down-sweep,#app-down span{
+        display: none;
+    }
+    #down-btn{
+        display: block;
+        margin: 0 auto;
+    }
+}
+@media(max-width: 413px){
+    #iwatch img:nth-child(2){
+        width: 100%;
+    }
+}
+/*  apple-watch结束  */
+
+/*  choiceness开始  */
+#choiceness{
+    height: 486px;
+    padding: 80px 16px;
+    background: #f5f5f5;
+}
+#choiceness h2{
+    font-size: 30px;
+    margin: 20px 0;
+    text-align: center;
+}
+#choiceness>p{
+    font-size: 20px;
+    font-weight: 100;
+    text-align: center;
+    margin-bottom: 80px;
+    color: #888888;
+}
+#coupon{
+    height: 310px;
+    width: 1088px;
+    margin: 0 auto;
+    text-align: center;
+}
+#coupon a{
+    display: block;
+    float: left;margin: 15px;
+    color: #707175;
+}
+#coupon .coupon-info{
+    display: inline;
+    float: left;
+    width: 240px;
+    height: 280px;
+    color: #2F2F2F;
+    border: solid 1px #dddddd;
+}
+#coupon .coupon-info img{
+    width: 240px;
+    height: 160px;
+}
+#coupon .coupon-info h3{
+    font-weight: bold;
+    margin-top: 15px;
+    height: 32px;
+    line-height: 32px;
+}
+#coupon .coupon-info p{
+    font-size: 14px;
+    margin-bottom: 14px;
+    height: 28px;
+    line-height: 28px;
+}
+#coupon .coupon-info:hover{
+    color: #a98e67;
+    box-shadow: 0 2px 4px #ccc;
+}
+#coupon a:hover{
+    color: #a98e67;
+}
+@media (max-width: 1128px) {
+    #choiceness{
+        height: 796px;
+    }
+    #coupon{
+        height: 620px;
+        width: 816px;
+    }
+}
+
+
