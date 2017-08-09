@@ -16,6 +16,13 @@ a{
     display: block;
     clear: both;
 }
+.triangle::after{
+    content: '';
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px #FFFFFF solid;
+    position: absolute;
+}
 @font-face {
     font-family: 'icon';
     src:url(../fonts/icon.ttf) format('truetype') ;
@@ -37,11 +44,13 @@ a{
 }
 #menu img{
     display: block;
+    cursor:pointer;
 }
 #menu span{
     font-size: 13px;
     padding-left: 2px;
     font-family: avenir;
+    cursor:pointer;
 }
 #brand{
     text-align: center;
@@ -85,3 +94,48 @@ a{
     }
 }
 /*  header½áÊø  */
+
+/*  mask¿ªÊ¼  */
+#mask{
+    position: absolute;
+    width: 100%;
+    background: rgba(0,0,0,0.5);
+    left: 0;
+    top: 0;
+    z-index: 10;
+    display: none;
+}
+#receptacle{
+    width: 270px;
+    background: rgba(0,0,0,1);
+}
+#receptacle ul{
+    padding: 10px 0;
+}
+#receptacle a{
+    width: 240px;
+    padding: 10px 15px;
+    display: block;
+    font-size: 15px;
+    height: 27px;
+    line-height: 27px;
+}
+#shop{
+    border-bottom: 1px solid #8c8c8c;
+}
+#shop a{
+    color: #b89f7a;
+}
+#shop a:hover{
+    color: #ffffff;
+}
+#nav-menu a{
+    color: #ffffff;
+}
+#nav-menu a:hover{
+    color: #967a50;
+}
+#nav-menu li .triangle::after{
+    left: 245px;
+    margin-top: 11px;
+}
