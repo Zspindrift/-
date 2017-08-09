@@ -339,6 +339,7 @@
         <script>
             $(function(){
                 var $mask = $("#mask");
+                var $nh3 = $("#nav h3");
                 $("#menu img").add($("#menu span")).on("click",function(){
                     $("#mask").css("display","block");
                 });
@@ -351,6 +352,10 @@
                 });
                 $mask.add("#receptacle").css({
                     height: $("body").clientHeight
+                });
+                $nh3.on("click",function(){
+                    $("#nav li").slideToggle();
+                    $nh3.add($("#nav .triangle")).css("color","#bda683");
                 });
             });
         </script>
