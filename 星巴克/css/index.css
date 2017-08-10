@@ -647,6 +647,9 @@
 #coupon a:hover{
     color: #a98e67;
 }
+.selected{
+    color:#a98e67;
+}
 @media (max-width: 1128px) {
     #choiceness{
         height: 796px;
@@ -800,12 +803,14 @@
     width: 235px;
 }
 #footer ul h3,#footer ul h3 a{
-    color: #ffffff;
     font-weight: 600;
     font-size: 20px;
     height: 30px;
     line-height: 30px;
     margin-bottom: 7px;
+}
+#footer .font-color{
+    color: #ffffff;
 }
 #footer li a{
     color: #b5b5b5;
